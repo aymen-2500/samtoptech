@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM TOP TECH | متجر معدات الشبكات في اليمن</title>
+    <meta name="description" content="المتجر الأول لمعدات الشبكات في اليمن. Mikrotik · TP-Link · Totolink · D-Link · Netis · Ubiquiti · Cisco — أجهزة أصلية بأسعار حقيقية مع دعم فني 24/7.">
+    <meta name="keywords" content="معدات شبكات اليمن, ميكروتك, تي بي لينك, اكسس بوينت, سويتشات, كابلات, سام توب تاتش, إب">
+    <meta property="og:title" content="SAM TOP TECH | متجر معدات الشبكات في اليمن">
+    <meta property="og:description" content="7 ماركات عالمية. أسعار حقيقية. دعم فني 24/7. شحن لكل المحافظات.">
+    <meta property="og:image" content="https://placehold.co/600x400/0d2347/white?text=SAM+TOP+TECH">
+    <meta property="og:type" content="website">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Sam Top Tech",
+      "description": "المتجر الأول لمعدات الشبكات في اليمن",
+      "url": "https://www.samtoptech.com",
+      "address": { "@type": "PostalAddress", "addressLocality": "إب", "addressCountry": "YE" },
+      "contactPoint": { "@type": "ContactPoint", "telephone": "+967-770-554-042", "contactType": "customer service" }
+    }
+    </script>
+</head>
+<body>
+
+<!-- شريط علوي -->
+<div class="topbar">
+    <div class="topbar-inner">
+        <div class="tb-left">
+            <span class="tb-item"><i class="fa-brands fa-whatsapp"></i> +967 770 554 042</span>
+            <span class="tb-item"><i class="fa-brands fa-telegram"></i> @samtopthch_yemen</span>
+            <span class="tb-item"><i class="fa-solid fa-location-dot"></i> اليمن — محافظة إب</span>
+        </div>
+        <div class="tb-right"><div class="tb-pulse"></div>SAMTOPTHCH_YEMEN</div>
+    </div>
+</div>
+
+<!-- زر القائمة للموبايل -->
+<button class="mob-btn" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i> القائمة</button>
+<div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+<div class="page-wrap">
+
+<!-- الشريط الجانبي -->
+<aside class="sidebar" id="sidebar">
+    <div class="sb-logo">
+        <div class="sb-mark"><div class="sb-mark-txt">SAM<br>TOP<br>TECH</div></div>
+        <div class="sb-name">سام توب تاتش</div>
+        <div class="sb-handle">@samtopthch_yemen</div>
+    </div>
+    <div class="sb-lbl">الصفحات</div>
+    <div class="sb-nav">
+        <a class="sbn on" onclick="showSec('home',this)"><div class="sbn-ico"><i class="fa-solid fa-house"></i></div><span class="sbn-txt">الرئيسية</span></a>
+    </div>
+    <div class="sb-sep"></div>
+    <div class="sb-lbl">المنتجات</div>
+    <div class="sb-nav" id="sidebar-nav-products"></div>
+    <div class="sb-sep"></div>
+    <div class="sb-lbl">الخدمات</div>
+    <div class="sb-nav">
+        <a class="sbn" onclick="showSec('maint',this)"><div class="sbn-ico"><i class="fa-solid fa-screwdriver-wrench"></i></div><span class="sbn-txt">الصيانة والتركيب</span></a>
+        <a class="sbn" onclick="showSec('faq',this)"><div class="sbn-ico"><i class="fa-solid fa-circle-question"></i></div><span class="sbn-txt">الأسئلة والاستفسارات</span></a>
+        <a class="sbn" onclick="showSec('reviews',this)"><div class="sbn-ico"><i class="fa-solid fa-star"></i></div><span class="sbn-txt">آراء العملاء</span></a>
+        <a class="sbn" onclick="showSec('contact',this)"><div class="sbn-ico"><i class="fa-solid fa-comments"></i></div><span class="sbn-txt">تواصل معنا</span></a>
+    </div>
+    <div class="sb-footer">
+        <div class="sb-ftag"><span class="dot">●</span>samtopthch_yemen · إب · اليمن</div>
+    </div>
+</aside>
+
+<!-- المحتوى الرئيسي -->
+<div class="main-content">
+
+    <!-- الشريط المتحرك -->
+    <div class="ticker"><div class="ticker-track" id="tickTrk"></div></div>
+
+    <!-- ========== الرئيسية ========== -->
+    <div class="prod-section active" id="sec-home">
+        <div class="hero">
+            <div class="hcir c1"></div><div class="hcir c2"></div>
+            <div class="hero-bg-txt">NETWORK</div>
+            <div class="hero-inner">
+                <div>
+                    <div class="h-eyebrow"><div class="h-line"></div><span class="h-etxt">متجر الشبكات والإنترنت · 7 ماركات · اليمن</span><div class="h-dot"></div></div>
+                    <h1 class="hero-h1">كل ما يلزم<br><span class="grad">الإنترنت والشبكات</span><span class="sub">Sam Top Tech · @samtopthch_yemen</span></h1>
+                    <p class="hero-desc">متجرك الأول لـ <strong>Mikrotik · TP-Link · Totolink · D-Link · Netis · Ubiquiti · Cisco</strong> — أجهزة أصلية بأسعار حقيقية بالدولار، مع دعم فني 24/7 في اليمن.</p>
+                    <div class="hero-btns">
+                        <button class="btn-p" onclick="showSec('router',null)"><i class="fa-solid fa-bag-shopping"></i> تصفح المنتجات</button>
+                        <button class="btn-s" onclick="showSec('contact',null)"><i class="fa-solid fa-comment"></i> تواصل معنا</button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hstat"><span class="v">82+</span><span class="l">منتج</span></div>
+                        <div class="hstat"><span class="v">7</span><span class="l">ماركات</span></div>
+                        <div class="hstat"><span class="v">24/7</span><span class="l">دعم فني</span></div>
+                        <div class="hstat"><span class="v">سنتان</span><span class="l">ضمان</span></div>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <div class="hc-box"><div class="hc-txt">SAM<br>TOP<br>TECH</div></div>
+                    <div class="hc-name">Sam Top Tech</div>
+                    <div class="hc-sub">@samtopthch_yemen</div>
+                    <div class="hc-div"></div>
+                    <div class="hc-grid">
+                        <div class="hcg"><span class="v">82+</span><span class="l">منتج</span></div>
+                        <div class="hcg"><span class="v">7</span><span class="l">ماركات</span></div>
+                        <div class="hcg"><span class="v">24/7</span><span class="l">دعم</span></div>
+                        <div class="hcg"><span class="v">سنتان</span><span class="l">ضمان</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- شريط الماركات -->
+        <div class="brands-bar">
+            <span class="br-label">الماركات:</span>
+            <span class="brand-pill"><i class="fa-solid fa-microchip"></i> Mikrotik</span>
+            <span class="brand-pill"><i class="fa-solid fa-wifi"></i> TP-Link</span>
+            <span class="brand-pill"><i class="fa-solid fa-globe"></i> Totolink</span>
+            <span class="brand-pill"><i class="fa-solid fa-network-wired"></i> D-Link</span>
+            <span class="brand-pill"><i class="fa-solid fa-bolt"></i> Netis</span>
+            <span class="brand-pill"><i class="fa-solid fa-satellite"></i> Ubiquiti</span>
+            <span class="brand-pill"><i class="fa-solid fa-building"></i> Cisco</span>
+        </div>
+        
+        <!-- الأرقام -->
+        <div class="nums-sec">
+            <div class="nums-grid">
+                <div class="nb rv"><span class="nb-v nb-g" data-t="82">0</span><span class="nb-l">منتج</span></div>
+                <div class="nb rv d1"><span class="nb-v" data-t="7">0</span><span class="nb-l">ماركات</span></div>
+                <div class="nb rv d2"><span class="nb-v" data-t="8">0</span><span class="nb-l">سنوات خبرة</span></div>
+                <div class="nb rv d3"><span class="nb-v nb-g" data-t="99">0</span><span class="nb-l">% رضا العملاء</span></div>
+                <div class="nb rv d4"><span class="nb-v" data-t="24">0</span><span class="nb-l">ساعة دعم</span></div>
+            </div>
+        </div>
+        
+        <!-- لماذا نحن -->
+        <div class="sec alt">
+            <div class="eyebrow rv"><div class="ey-l"></div><div class="ey-t">Why Choose Us</div></div>
+            <h2 class="sec-h rv d1">لماذا <span class="hl">Sam Top Tech</span></h2>
+            <div class="why-grid rv d2">
+                <div class="wc"><div class="wc-ico"><i class="fa-solid fa-shield-check"></i></div><div class="wc-t">منتجات أصلية مضمونة</div><div class="wc-d">كل الأجهزة من مصادر موثوقة مع ضمان رسمي سنتان</div></div>
+                <div class="wc"><div class="wc-ico"><i class="fa-solid fa-tag"></i></div><div class="wc-t">أسعار حقيقية بالدولار</div><div class="wc-d">أسعار مباشرة بلا مبالغة — قارن بنفسك</div></div>
+                <div class="wc"><div class="wc-ico"><i class="fa-solid fa-globe"></i></div><div class="wc-t">7 ماركات عالمية</div><div class="wc-d">Mikrotik · TP-Link · Totolink · D-Link · Netis · Ubiquiti · Cisco</div></div>
+                <div class="wc"><div class="wc-ico"><i class="fa-solid fa-headset"></i></div><div class="wc-t">دعم فني 24/7</div><div class="wc-d">مهندسون شبكات عبر واتساب وتيليغرام — فوري</div></div>
+                <div class="wc"><div class="wc-ico"><i class="fa-solid fa-truck-fast"></i></div><div class="wc-t">توصيل سريع</div><div class="wc-d">داخل إب فوري — جميع المحافظات 24-72 ساعة</div></div>
+                <div class="wc"><div class="wc-ico"><i class="fa-solid fa-gears"></i></div><div class="wc-t">تركيب واعداد كامل</div><div class="wc-d">فريق ميداني للتركيب وإعداد Mikrotik وVLAN</div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== أقسام المنتجات (تعبأ ديناميكياً) ========== -->
+    <div class="prod-section" id="sec-router">
+        <div class="sec">
+            <div class="eyebrow rv"><div class="ey-l"></div><div class="ey-t">Routers & Mikrotik</div></div>
+            <h2 class="sec-h rv d1">الراوترات <span class="hl">والمايكروتك</span></h2>
+            <p class="sec-sub rv d2" id="router-count"></p>
+            <div class="filter-bar rv d3" id="router-filter"></div>
+            <div class="prod-grid" id="router-grid"></div>
+        </div>
+    </div>
+
+    <div class="prod-section" id="sec-ap">
+        <div class="sec">
+            <div class="eyebrow rv"><div class="ey-l"></div><div class="ey-t">Access Points & CPE</div></div>
+            <h2 class="sec-h rv d1">اكسس بوينت <span class="hl">والمقويات</span></h2>
+            <p class="sec-sub rv d2" id="ap-count"></p>
+            <div class="filter-bar rv d3" id="ap-filter"></div>
+            <div class="prod-grid" id="ap-grid"></div>
+        </div>
+    </div>
+
+    <div class="prod-section" id="sec-switch">
+        <div class="sec">
+            <div class="eyebrow rv"><div class="ey-l"></div><div class="ey-t">Network Switches</div></div>
+            <h2 class="sec-h rv d1">المحولات <span class="hl">السويتشات</span></h2>
+            <p class="sec-sub rv d2" id="switch-count"></p>
+            <div class="filter-bar rv d3" id="switch-filter"></div>
+            <div class="prod-grid" id="switch-grid"></div>
+        </div>
+    </div>
+
+    <div class="prod-section" id="sec-acc">
+        <div class="sec">
+            <div class="eyebrow rv"><div class="ey-l"></div><div class="ey-t">Accessories & Cables</div></div>
+            <h2 class="sec-h rv d1">الاكسسوارات <span class="hl">والكابلات</span></h2>
+            <p class="sec-sub rv d2" id="acc-count"></p>
+            <div class="filter-bar rv d3" id="acc-filter"></div>
+            <div class="prod-grid" id="acc-grid"></div>
+        </div>
+    </div>
+
+    <!-- ========== الصيانة ========== -->
+    <div class="prod-section" id="sec-maint">
+        <div class="sec">
+            <div class="eyebrow rv"><div class="ey-l"></div><div class="ey-t">Maintenance & Installation</div></div>
+            <h2 class="sec-h rv d1">الصيانة <span class="hl">والتركيب</span></h2>
+            <p class="sec-sub rv d2">فريق فني متخصص لجميع أعمال الشبكات في إب وسائر المحافظات</p>
+            <div class="maint-grid rv d2">
+                <div class="mc"><div class="mc-ico"><i class="fa-solid fa-network-wired"></i></div><div class="mc-t">تركيب شبكات LAN/WiFi</div><div class="mc-d">تصميم وتركيب شبكات سلكية ولاسلكية للمنازل والشركات</div><div class="mc-p">يبدأ من $30</div></div>
+                <div class="mc"><div class="mc-ico"><i class="fa-solid fa-sliders"></i></div><div class="mc-t">إعداد Mikrotik RouterOS</div><div class="mc-d">Hotspot · VLAN · Bandwidth · Firewall · VPN</div><div class="mc-p">يبدأ من $20</div></div>
+                <div class="mc"><div class="mc-ico"><i class="fa-solid fa-tower-broadcast"></i></div><div class="mc-t">روابط PtP/PtMP</div><div class="mc-d">روابط لاسلكية بعيدة المدى Mikrotik · Ubiquiti</div><div class="mc-p">يبدأ من $50</div></div>
+                <div class="mc"><div class="mc-ico"><i class="fa-solid fa-toolbox"></i></div><div class="mc-t">صيانة الأجهزة</div><div class="mc-d">إصلاح وفحص جميع الراوترات والسويتشات والـ AP</div><div class="mc-p">يبدأ من $10</div></div>
+                <div class="mc"><div class="mc-ico"><i class="fa-solid fa-hotel"></i></div><div class="mc-t">مشاريع الشركات والفنادق</div><div class="mc-d">بنية تحتية متكاملة مع VLAN · Hotspot · VPN</div><div class="mc-p">حسب المشروع</div></div>
+                <div class="mc"><div class="mc-ico"><i class="fa-solid fa-video"></i></div><div class="mc-t">كاميرات المراقبة IP</div><div class="mc-d">تركيب كاميرات IP عبر PoE بجودة 4K وتسجيل سحابي</div><div class="mc-p">يبدأ من $50</div></div>
+                <div class="mc"><div class="mc-ico"><i class="fa-solid fa-plug"></i></div><div class="mc-t">تمديد Cat6/Fiber</div><div class="mc-d">تمديد احترافي مع Patch Panel وصناديق ODF</div><div class="mc-p">حسب الطول</div></div>
+                <div class="mc"><div class="mc-ico"><i class="fa-solid fa-laptop"></i></div><div class="mc-t">دعم عن بُعد — مجاني</div><div class="mc-d">حل المشاكل التقنية فوراً عبر واتساب للعملاء</div><div class="mc-p">مجاني للعملاء</div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== الأسئلة الشائعة ========== -->
+    <div class="prod-section" id="sec-faq">
+        <div class="sec">
+            <div class="eyebrow rv"><div class="ey-l"></div><div class="ey-t">FAQ</div></div>
+            <h2 class="sec-h rv d1">الأسئلة <span class="hl">الشائعة</span></h2>
+            <p class="sec-sub rv d2">إجابات تقنية دقيقة لأكثر الأسئلة شيوعاً</p>
+            <div class="faq-list rv d2" id="faqList"></div>
+        </div>
+    </div>
+
+    <!-- ========== آراء العملاء ========== -->
+    <div class="prod-section" id="sec-reviews">
+        <div class="sec">
+            <div class="eyebrow rv"><div class="ey-l"></div><div class="ey-t">Customer Reviews</div></div>
+            <h2 class="sec-h rv d1">آراء <span class="hl">العملاء</span></h2>
+            <p class="sec-sub rv d2">شاركنا تجربتك مع منتجاتنا وخدماتنا</p>
+            <div class="review-form rv d2">
+                <div class="frow">
+                    <div class="fg"><label>الاسم</label><input type="text" id="rev-name" class="finp" placeholder="اسمك الكريم"></div>
+                    <div class="fg"><label>المنتج / الخدمة</label><input type="text" id="rev-product" class="finp" placeholder="مثلاً: Mikrotik hEX Gigabit"></div>
+                </div>
+                <div class="fg"><label>تقييمك</label>
+                    <div class="star-rating" id="star-rating">
+                        <span data-star="1"><i class="fa-regular fa-star"></i></span>
+                        <span data-star="2"><i class="fa-regular fa-star"></i></span>
+                        <span data-star="3"><i class="fa-regular fa-star"></i></span>
+                        <span data-star="4"><i class="fa-regular fa-star"></i></span>
+                        <span data-star="5"><i class="fa-regular fa-star"></i></span>
+                    </div>
+                </div>
+                <div class="fg"><label>تعليقك</label><textarea id="rev-text" class="fta" placeholder="اكتب تجربتك..."></textarea></div>
+                <button class="btn-send" onclick="submitReview()"><i class="fa-solid fa-paper-plane"></i> نشر التقييم</button>
+            </div>
+            <div class="reviews-list rv d3" id="reviews-list"></div>
+        </div>
+    </div>
+
+    <!-- ========== تواصل معنا ========== -->
+    <div class="prod-section" id="sec-contact">
+        <div class="sec">
+            <div class="eyebrow rv"><div class="ey-l"></div><div class="ey-t">Contact Us</div></div>
+            <h2 class="sec-h rv d1">تواصل <span class="hl">معنا</span></h2>
+            <div class="contact-grid">
+                <div>
+                    <p class="sec-sub" style="margin-bottom:0">فريقنا جاهز 24/7 للرد على كل استفسار</p>
+                    <div class="cc-list">
+                        <a class="cc" href="https://wa.me/967770554042" target="_blank"><div class="cc-ico-w"><i class="fa-brands fa-whatsapp"></i></div><div><span class="cc-lbl">WhatsApp</span><span class="cc-val">+967 770 554 042</span></div></a>
+                        <a class="cc" href="https://t.me/samtopthch_yemen" target="_blank"><div class="cc-ico-w"><i class="fa-brands fa-telegram"></i></div><div><span class="cc-lbl">Telegram</span><span class="cc-val">@samtopthch_yemen</span></div></a>
+                        <a class="cc" href="mailto:info@samtoptech.com"><div class="cc-ico-w"><i class="fa-solid fa-envelope"></i></div><div><span class="cc-lbl">Email</span><span class="cc-val">info@samtoptech.com</span></div></a>
+                        <div class="cc"><div class="cc-ico-w"><i class="fa-solid fa-location-dot"></i></div><div><span class="cc-lbl">Location</span><span class="cc-val">اليمن — محافظة إب</span></div></div>
+                    </div>
+                </div>
+                <div>
+<form class="cform" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="9fbb0a85-dd07-4d45-a62e-1c91a9edccbe">
+    <input type="hidden" name="redirect" value="#">
+    <input type="hidden" name="subject" value="رسالة جديدة من متجر Sam Top Tech">
+    <div class="frow">
+        <div class="fg"><label>الاسم</label><input type="text" name="name" class="finp" placeholder="اسمك الكريم" required></div>
+        <div class="fg"><label>الهاتف</label><input type="tel" name="phone" class="finp" placeholder="+967 770 ..." required></div>
+    </div>
+    <div class="fg"><label>الموضوع</label><input type="text" name="subject" class="finp" placeholder="استفسار / طلب / مشروع"></div>
+    <div class="fg"><label>الرسالة</label><textarea name="message" class="fta" placeholder="اكتب رسالتك..." required></textarea></div>
+    <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+    <button type="submit" class="btn-send"><i class="fa-solid fa-paper-plane"></i> إرسال الرسالة</button>
+</form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <div class="fb-mrow"><div class="fb-box"><div class="fb-box-txt">SAM<br>TOP</div></div><div><div class="fb-brand">Sam Top Tech</div><div class="fb-handle2">@samtopthch_yemen</div></div></div>
+                <p class="fb-desc">متجرك الأول لمعدات الشبكات والإنترنت في اليمن. 7 ماركات عالمية بأسعار حقيقية.</p>
+                <div class="fb-soc">
+                    <a class="fsoc" href="https://wa.me/967770554042"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a class="fsoc" href="https://t.me/samtopthch_yemen"><i class="fa-brands fa-telegram"></i></a>
+                    <a class="fsoc" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="fsoc" href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="fcol"><h5>الراوترات</h5><ul><li><a href="#" onclick="showSec('router',null)">Mikrotik Routers</a></li><li><a href="#" onclick="showSec('router',null)">TP-Link Routers</a></li><li><a href="#" onclick="showSec('router',null)">Totolink Routers</a></li><li><a href="#" onclick="showSec('router',null)">D-Link Routers</a></li></ul></div>
+            <div class="fcol"><h5>الشبكات</h5><ul><li><a href="#" onclick="showSec('ap',null)">Access Points/CPE</a></li><li><a href="#" onclick="showSec('switch',null)">Network Switches</a></li><li><a href="#" onclick="showSec('acc',null)">Cables & Accessories</a></li><li><a href="#" onclick="showSec('acc',null)">Fiber Equipment</a></li></ul></div>
+            <div class="fcol"><h5>الخدمات</h5><ul><li><a href="#" onclick="showSec('maint',null)">صيانة وتركيب</a></li><li><a href="#" onclick="showSec('reviews',null)">آراء العملاء</a></li><li><a href="#" onclick="showSec('faq',null)">أسئلة شائعة</a></li><li><a href="#" onclick="showSec('contact',null)">تواصل معنا</a></li></ul></div>
+            <div class="fcol"><h5>التواصل</h5><ul><li><a href="https://wa.me/967770554042">+967 770 554 042</a></li><li><a href="https://t.me/samtopthch_yemen">@samtopthch_yemen</a></li><li><a href="mailto:info@samtoptech.com">info@samtoptech.com</a></li><li><a href="#">إب · اليمن</a></li></ul></div>
+        </div>
+        <div class="fbar">
+            <span>© 2025 <span class="fg2">Sam Top Tech</span> — جميع الحقوق محفوظة</span>
+            <span>7 ماركات · 82+ منتج · إب · اليمن</span>
+        </div>
+    </footer>
+</div>
+</div>
+
+<!-- سلة المشتريات -->
+<div class="cart-fab" id="cart-fab" onclick="toggleCart()">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span class="cart-count" id="cart-count">0</span>
+</div>
+
+<!-- نافذة السلة -->
+<div class="cart-modal" id="cart-modal">
+    <div class="cart-modal-inner">
+        <div class="cart-header">
+            <h3><i class="fa-solid fa-cart-shopping"></i> سلة المشتريات</h3>
+            <button class="cart-close" onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-empty" id="cart-empty">
+            <i class="fa-solid fa-cart-shopping" style="font-size:3rem;opacity:0.3;"></i>
+            <p>السلة فارغة — تصفح المنتجات وأضف ما تحتاج</p>
+        </div>
+        <div class="cart-footer" id="cart-footer" style="display:none;">
+            <div class="cart-total"><span>الإجمالي:</span><span id="cart-total">$0</span></div>
+            <button class="btn-whatsapp" onclick="checkoutWhatsApp()"><i class="fa-brands fa-whatsapp"></i> إنهاء الطلب عبر واتساب</button>
+            <button class="btn-clear" onclick="clearCart()"><i class="fa-solid fa-trash"></i> تفريغ السلة</button>
+        </div>
+    </div>
+</div>
+
+<!-- Toast -->
+<div id="toast"></div>
+
+<!-- زر العودة للأعلى -->
+<button id="back-to-top" title="العودة للأعلى"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="data.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
